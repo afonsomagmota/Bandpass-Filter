@@ -82,10 +82,10 @@ xfftj = fftfreq(N, T_SAMPLE)
 fig, (ax1, ax2) = plt.subplots(1, 2)
 ax1.set_xlim(0, 500)
 ax2.set_xlim(0, 500)
-fig.suptitle('Frequency domain (BEFORE/AFTER)')                                 #gráfico no domínio das frequências
-ax1.plot(xfftyk, np.abs(yfftyk))                                                #traçar a TF do sinal original
-ax2.plot(xfftj, np.abs(yfftj))                                                  #traçar a TF do sinal filtrado
-plt.show()                                                                      #rezar que esteja tudo bem
+fig.suptitle('Frequency domain (BEFORE/AFTER)')                                 #frequency domain graph
+ax1.plot(xfftyk, np.abs(yfftyk))                                                #plot the FFT of the original signal
+ax2.plot(xfftj, np.abs(yfftj))                                                  #plot the FFT of the filtered signal
+plt.show()                                                                      #trust in what you read and accomplish and everything will work! ;)
 
 
 
